@@ -2,10 +2,10 @@
 <widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Purdue Open Parking Spaces</name>
     <description>
-        A blank PhoneGap app.
+        An open parking space detector for a TLI 213 Project.
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="xjcoan@gmail.com" href="http://xjcoan.com">
+        X Coan
     </author>
     <content src="index.html" />
     <access origin="*" />

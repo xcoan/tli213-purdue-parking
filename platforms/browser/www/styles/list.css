@@ -1,0 +1,51 @@
+/*body {
+  overflow-x:hidden;
+}*/
+.box {
+  border: 1px solid;
+  margin-bottom: 30px;
+}
+
+.box small {
+  text-align: center!important;
+}
+
+table {
+  width: 100vw;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+}
+
+nav {
+  bottom: 0;
+  position: fixed;
+  width: 100vw;
+  left: 0;
+}
+
+/*#map {
+  color: white;
+}*/
+
+#map a {
+  color: white;
+  text-decoration: none;
+}
+
+.link {
+  text-align: center;
+  border: 1px solid;
+  width: 50vw;
+  background-color: rgb(80, 88, 85);
+  bottom: 0;
+}
+
+#listview {
+  color: gold;
+}
+
+#listview a {
+  color: gold;
+  text-decoration: none;
+}
