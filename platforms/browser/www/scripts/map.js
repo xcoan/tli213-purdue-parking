@@ -10,12 +10,12 @@ $(document).ready(function() {
       var MapSettings ={
         zoom: 14,
         center: myLatLng,
-        mapTypeControl: true,
+        mapTypeControl: false,
           mapTypeControlOptions: {
             style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
             position: google.maps.ControlPosition.BOTTOM_CENTER
           },
-          fullscreenControl: true,
+          fullscreenControl: false,
           fullscreenControlOptions: {
             position: google.maps.ControlPosition.BOTTOM_CENTER
           },
@@ -23,7 +23,7 @@ $(document).ready(function() {
           zoomControlOptions: {
             position: google.maps.ControlPosition.RIGHT_CENTER
           },
-          scaleControl: true,
+          scaleControl: false,
           streetViewControl: false,
           streetViewControlOptions: {
             position: google.maps.ControlPosition.BOTTOM_CENTER
@@ -35,6 +35,10 @@ $(document).ready(function() {
       });
 
       function addMarker(lot) {
+        var markerColor = "blue";
+        if (lot['spots'].charAt(0) == '0') {
+          markerColor = "red"; // lot is full
+        }
         var contentString = '<div id="content">'+
           '<div id="siteNotice">'+
           '</div>'+
@@ -48,6 +52,7 @@ $(document).ready(function() {
         var marker = new google.maps.Marker({
           position: {lat: parseFloat(coords[0]), lng: parseFloat(coords[1])},
           map: map,
+          icon: 'http://maps.google.com/mapfiles/ms/icons/' + markerColor + '.png',
           title: lot['lot'],
           contentString: contentString
         });
