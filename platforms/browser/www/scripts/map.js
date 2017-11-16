@@ -5,10 +5,10 @@ $(document).ready(function() {
   var jqxhr = $.getJSON( "scripts/data.json", function() {})
     .done(function(json) {
       lots = json;
-      var myLatLng = new google.maps.LatLng( 40.428558, -86.9136493);
+      var myLatLng = new google.maps.LatLng(40.428558, -86.9136493);
 
       var MapSettings ={
-        zoom: 14,
+        zoom: 15,
         center: myLatLng,
         mapTypeControl: false,
           mapTypeControlOptions: {
@@ -73,7 +73,6 @@ $(document).ready(function() {
       }
     })
     .fail(function() {
-      console.log( "error" );
+      alert('Something went wrong');
     });
-
 });
