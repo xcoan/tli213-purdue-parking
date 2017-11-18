@@ -4,15 +4,14 @@
   text-align: center;
 }
 
-.box:first-of-type {
-  margin-top: 50px;
-}
 
 .box small {
   text-align: center!important;
 }
 
-.box:last-of-type {
+
+.boxContainer {
+  margin-top: 50px;
   margin-bottom: 175px;
 }
 
